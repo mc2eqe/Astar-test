@@ -1,8 +1,5 @@
 name: Release Runtime Build
 on:
-  push:
-    tags:
-      - runtime-[0-9]+*
   workflow_dispatch:
 env:
   SUBWASM_VERSION: 0.16.1

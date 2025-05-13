@@ -1,9 +1,6 @@
 name: rustdoc
 on:
-  pull_request:
-    types: [closed]
-    branches:
-    - master
+  workflow_dispatch:
 
 jobs:
   rustdoc:
