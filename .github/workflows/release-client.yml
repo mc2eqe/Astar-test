@@ -30,7 +30,6 @@ jobs:
           mkdir -p .cargo
           touch .cargo/config
           printf '[target.aarch64-unknown-linux-gnu]\nlinker = "aarch64-linux-gnu-gcc"' >> .cargo/config
-          printf '[dependencies]\nopenssl = { version = "0.10", features = ["vendored"] }' >> Cargo.toml
 
       - name: Install Rust and target
         uses: actions-rs/toolchain@v1
