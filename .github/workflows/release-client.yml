@@ -57,7 +57,7 @@ jobs:
         run: rustup target list --installed
 
       - name: Build optimized binary
-        run: cargo build --profile production --target ${{ matrix.target }} --locked --bin astar-collator pkg-config libssl-dev
+        run: cargo build --profile production --target ${{ matrix.target }} --locked --bin astar-collator
       - name: Set artifact name
         env:
           TARGET: ${{ matrix.target }}
